@@ -17,33 +17,44 @@
             <li class="nav-li"><a href="about.html" class="nav-li-a">Nosotros</a></li>
         </ul>
     </nav>
-    <section class="mainsection">
+    <section class="mainsectionHome">
+
+        <div class="infodiv">
+            <h2>¿Que debo hacer?</h2>
+            <p>En esta parte usted debe ingresar los datos necesarios para internamente realizar los cálculos necesarios para así determinar los productos que necesita</p>
+        </div>
 
         <div class="container">
             <div class="card">
                 <a class="singup">Datos </a>
-                
-                <p>Introduzca sus datos para calcular los productos que necesita</p>
 
                 <div class="inputBox1">
-                    <input type="text" required="required">
+                    <input type="number" required="required">
                     <span>Numero de personas</span>
                 </div>
 
                 <div class="inputBox">
-                    <input type="text" required="required">
+                    <input type="number" required="required">
                     <span>Presupuesto maximo</span>
                 </div>
 
-                <button class="enter">Enter</button>
-
+                <button id="btnQlEnter" class="enter" onclick="enter()">Enter</button>
+                <p id="layoutDeError">Esta operación no está disponible de momento.</p>
             </div>
         </div>
 
-
-        <p>En esta parte usted debe ingresar los datos necesarios para internamente realizar los cálculos necesarios para así determinar los productos que necesita</p>
+        
 
     </section>
+
+    <script>
+        function enter (e) {
+            const p = document.getElementById("layoutDeError");
+            const btn = document.getElementById("btnQlEnter");
+            p.style.display = "block";
+            btn.style.marginBottom = "1em";
+        }
+    </script>
   
 </body>
 </html>
