@@ -44,6 +44,14 @@ body{
     text-decoration: underline;
 }
 
+.mainsectionContact{
+    width: 90%;
+    margin: 1rem auto;
+    background-color: whitesmoke;
+    color: #232323;
+    padding: 3em;
+}
+
 .mainsectionAbout{
     width: 90%;
     margin: 1rem auto;
